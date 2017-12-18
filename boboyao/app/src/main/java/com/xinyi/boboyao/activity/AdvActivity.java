@@ -67,7 +67,7 @@ public class AdvActivity extends BaseActivity {
             } else {
                 timer_tv.setText("0");
                 nextImage();
-
+//                ---
             }
 
             countdown--;
