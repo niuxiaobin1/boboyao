@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">BoboYao</string>
+
+
+    <string name="footer_businessString">商家</string>
+    <string name="footer_messageString">信息</string>
+    <string name="footer_zhuanmiString">赚米</string>
+    <string name="footer_amusementString">娱乐</string>
+    <string name="footer_mineString">我的</string>
+    <string name="business_search_hintString">搜索商家、商品或商圈</string>
+    <string name="business_searchfriend_hintString">搜索好友</string>
+    <string name="business_category_restaurantString">餐饮</string>
+    <string name="business_category_cinemaString">影院</string>
+    <string name="business_category_hotelString">酒店住宿</string>
+    <string name="business_category_amusementString">休闲娱乐</string>
+    <string name="business_category_ktvString">酒吧KTV</string>
+
+    <string name="business_sort_distanceString">距离最近</string>
+    <string name="business_sort_praiseString">好评最多</string>
+    <string name="business_sort_bestOfferString">最优惠</string>
+    <string name="business_sort_highestSalesString">销量最高</string>
+    <string name="business_sort_mostPopularString">人气最旺</string>
+    <string name="business_sort_raffleString">可抽奖</string>
+    <string name="emptyString">&#8195;</string>
+
+    <string name="emojicon_test_name">示例</string>
+    <string name="at_your_in_group">%s在群聊中@了你</string>
+    <string name="msg_recall_by_user">%1$s 撤回了一条消息</string>
+
+    <string name="msg_mail_list">通讯录</string>
+    <string name="msg_add_friend">添加好友</string>
+    <string name="msg_group">群</string>
+    <string name="msg_friendBorrow">好友借</string>
+    <string name="zhuanmi_luckpan">欢乐大转盘</string>
+    <string name="zhuanmi_vip">VIP每日红包</string>
+    <string name="zhuanmi_shougong">收贡</string>
+    <string name="zhuanmi_readAdv">阅读广告</string>
+    <string name="zhuanmi_inviteFriend">邀请好友</string>
+    <string name="zhuanmi_shareToFriendCircle">分享至朋友圈</string>
+    <string name="zhuanmi_1Shareholder">一元股东</string>
+    <string name="zhuanmi_tempTask">临时任务</string>
+
+    <string name="amusement_worldCircle">世界圈</string>
+    <string name="amusement_friendCircle">好友圈</string>
+    <string name="amusement_moneyTree">摇钱树</string>
+    <string name="amusement_redPacketRain">红包雨</string>
+    <string name="amusement_treasureMap">藏宝图</string>
+    <string name="amusement_game">游戏</string>
+
+
+    <string name="mine_wallet">钱包</string>
+    <string name="mine_boboBi">啵啵币</string>
+    <string name="mine_merchantsSettled">商家入驻</string>
+    <string name="mine_dvertisingaDelivery">广告投放</string>
+    <string name="mine_bankCrad">银行卡</string>
+    <string name="mine_anifestmRecord">提现记录</string>
+    <string name="mine_boboMall">啵啵币商城</string>
+    <string name="mine_costRecord">消费记录</string>
+    <string name="mine_setting">设置</string>
+
+    <string name="activity_vip_title">VIP每日红包</string>
+    <string name="activity_receoveRecord">领取记录</string>
+    <string name="activity_taskRecord">任务记录</string>
+    <string name="activity_receive">立即领取</string>
+    <string name="activity_instructions">使用说明：\n1.用户每日可免费转三次。\n2.超过3次每摇一次需要消耗1000啵啵币。</string>
+    <string name="activity_shouAllFriends">显示所有好友</string>
+    <string name="activity_OnekeyShougong">一键收贡</string>
+    <string name="activity_sellShares">出售股份</string>
+    <string name="activity_myBonus">我的分红</string>
+    <string name="activity_notice">公告</string>
+    <string name="activity_buy">购买</string>
+    <string name="activity_surePay">确认支付</string>
+    <string name="activity_checkbox_text"> 本人同意众创网络科技股份有限公司股份协议</string>
+    <string name="activity_next"> 下一条</string>
+
+    <string-array name="names">
+        <item>action</item>
+        <item>adventure</item>
+        <item>combat</item>
+        <item>moba</item>
+        <item>other</item>
+        <item>role</item>
+        <item>sports</item>
+        <item>words</item>
+
+    </string-array>
+
+    <string-array name="icons">
+        <item>action</item>
+        <item>adventure</item>
+        <item>combat</item>
+        <item>moba</item>
+        <item>other</item>
+        <item>role</item>
+        <item>sports</item>
+        <item>words</item>
+
+    </string-array>
+
+
+</resources>

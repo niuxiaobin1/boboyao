@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorMainFooterBg">#EEEEEE</color>
+    <color name="main_footer_selected_color">#920783</color>
+    <color name="main_footer_unselected_color">#6F6A69</color>
+    <color name="edittext_hint_color">#C2BCBC</color>
+    <color name="business_black_color">#040404</color>
+    <color name="business_sort_selected_color">#920783</color>
+    <color name="business_sort_unselected_color">#E5E5E5</color>
+    <color name="business_grey_color">#797979</color>
+    <color name="business_red_color">#ED292E</color>
+    <color name="business_content_item_line_color">#F0F0F0</color>
+    <color name="meaasge_text_color_black">#131313</color>
+    <color name="meaasge_text_receive_yellow">#F4E823</color>
+    <color name="temp_task_itme_gray">#595959</color>
+    <color name="circle_bg">#636363</color>
+    <color name="next_bg">#E24F57</color>
+</resources>

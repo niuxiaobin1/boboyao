@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_adv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xinyi.boboyao.activity.AdvActivity">
+
+    <include layout="@layout/activity_back_title_bar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:id="@+id/adv_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/advo" />
+
+        <LinearLayout
+            android:layout_margin="3dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/area_circle_bg"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/timer_tv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:onClick="onNext"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/footer_tv_size_16"
+            android:text="@string/activity_next"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/next_bg"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+    </RelativeLayout>
+    
+    
+
+</LinearLayout>

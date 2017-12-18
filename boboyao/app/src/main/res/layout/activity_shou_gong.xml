@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_shou_gong"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider_list"
+    android:orientation="vertical"
+    tools:context="com.xinyi.boboyao.activity.ShouGongActivity">
+
+    <include layout="@layout/activity_back_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/nav_img"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/business_search_rl"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/business_search_bg">
+
+            <ImageView
+                android:id="@+id/business_search_image"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/business_search_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/business_search_image"
+                android:text="@string/business_searchfriend_hintString"
+                android:textColor="@color/edittext_hint_color"
+                android:textSize="@dimen/footer_tv_size_12" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/arrow_down"
+                android:gravity="center"
+                android:text="@string/activity_shouAllFriends"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/footer_tv_size_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/activity_OnekeyShougong"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/footer_tv_size_14" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

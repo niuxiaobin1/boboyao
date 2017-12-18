@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:luckpan="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_luckpan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    tools:context="com.xinyi.boboyao.activity.LuckpanActivity">
+
+    <include layout="@layout/activity_back_title_bar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/luckpan_bgs"
+
+            android:orientation="vertical"
+            android:scrollbars="none">
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/imageview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/luckpan_content" />
+
+
+            <RelativeLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+
+                >
+
+                <com.xinyi.boboyao.views.luck.LuckPanLayout
+
+                    android:id="@+id/luckpan_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@android:color/transparent">
+
+                    <com.xinyi.boboyao.views.luck.RotatePan
+                        android:id="@+id/rotatePan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        luckpan:icons="@array/icons"
+                        luckpan:names="@array/names"
+                        luckpan:pannum="8" />
+
+
+                    <!---->
+
+                    <ImageView
+                        android:id="@+id/go"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="rotation"
+                        android:src="@mipmap/node"
+                        android:tag="startbtn" />
+
+
+                </com.xinyi.boboyao.views.luck.LuckPanLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:text="@string/activity_instructions"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/footer_tv_size_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_vip_red_packet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.xinyi.boboyao.activity.VipRedPacketActivity">
+
+    <include layout="@layout/activity_back_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/activity_receoveRecord"
+                android:textColor="@color/main_footer_selected_color"
+                android:textSize="@dimen/footer_tv_size_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/activity_taskRecord"
+                android:textColor="@color/main_footer_selected_color"
+                android:textSize="@dimen/footer_tv_size_14" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/redPacket_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/read_packet_bg">
+
+            <TextView
+                android:layout_marginBottom="30dp"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/rob_packet_tv"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/receive_packet_tv_bg"
+                android:paddingBottom="7dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="7dp"
+                android:text="@string/activity_receive"
+                android:textColor="@color/business_red_color"
+                android:textSize="@dimen/footer_tv_size_14" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

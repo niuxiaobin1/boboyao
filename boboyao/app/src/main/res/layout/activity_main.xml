@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xinyi.boboyao.activity.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/fragment_holder_rl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <fragment
+            android:id="@+id/business_fragment"
+            android:name="com.xinyi.boboyao.fragment.BusinessFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <fragment
+            android:id="@+id/message_fragment"
+            android:name="com.xinyi.boboyao.fragment.MessageFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <fragment
+            android:id="@+id/zhuanmi_fragment"
+            android:name="com.xinyi.boboyao.fragment.ZhuanmiFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <fragment
+            android:id="@+id/amusement_fragment"
+            android:name="com.xinyi.boboyao.fragment.AmusementFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <fragment
+            android:id="@+id/mine_fragment"
+            android:name="com.xinyi.boboyao.fragment.MineFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/main_footer_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMainFooterBg"
+        android:orientation="horizontal"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp">
+
+
+        <TextView
+            android:id="@+id/footer_business_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/main_footer_business_selector"
+            android:gravity="center"
+            android:text="@string/footer_businessString"
+            android:textColor="@color/footer_tv_color_selector"
+            android:textSize="@dimen/footer_tv_size_14" />
+
+        <TextView
+            android:id="@+id/footer_message_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/main_footer_message_selector"
+            android:gravity="center"
+            android:text="@string/footer_messageString"
+            android:textColor="@color/footer_tv_color_selector"
+            android:textSize="@dimen/footer_tv_size_14" />
+
+        <TextView
+            android:id="@+id/footer_zhuanmi_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/main_footer_zhuanmi_selector"
+            android:gravity="center"
+            android:text="@string/footer_zhuanmiString"
+            android:textColor="@color/footer_tv_color_selector"
+            android:textSize="@dimen/footer_tv_size_14" />
+
+        <TextView
+            android:id="@+id/footer_amusement_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/main_footer_amusement_selector"
+            android:gravity="center"
+            android:text="@string/footer_amusementString"
+            android:textColor="@color/footer_tv_color_selector"
+            android:textSize="@dimen/footer_tv_size_14" />
+
+        <TextView
+            android:id="@+id/footer_mine_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/main_footer_mine_selector"
+            android:gravity="center"
+            android:text="@string/footer_mineString"
+            android:textColor="@color/footer_tv_color_selector"
+            android:textSize="@dimen/footer_tv_size_14" />
+
+    </LinearLayout>
+
+</LinearLayout>

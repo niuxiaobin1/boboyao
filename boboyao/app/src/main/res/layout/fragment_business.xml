@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <!--search-layout-->
+    <LinearLayout
+        android:id="@+id/toolBars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/nav_img"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+
+            <RelativeLayout
+                android:id="@+id/business_search_rl"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/business_search_bg">
+
+                <ImageView
+                    android:id="@+id/business_search_image"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/business_search_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/business_search_image"
+                    android:text="@string/business_search_hintString"
+                    android:textColor="@color/edittext_hint_color"
+                    android:textSize="@dimen/footer_tv_size_14" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="-70dp"
+                android:layout_toLeftOf="@id/business_search_rl"
+                android:drawableRight="@mipmap/arrow_down"
+                android:gravity="center"
+                android:text="大连"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/footer_tv_size_16" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <!--餐饮-影院-住宿-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/canyin"
+            android:gravity="center"
+            android:text="@string/business_category_restaurantString"
+            android:textColor="@color/business_black_color"
+            android:textSize="@dimen/footer_tv_size_14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/yingyuan"
+            android:gravity="center"
+            android:text="@string/business_category_cinemaString"
+            android:textColor="@color/business_black_color"
+            android:textSize="@dimen/footer_tv_size_14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/jiudian"
+            android:gravity="center"
+            android:text="@string/business_category_hotelString"
+            android:textColor="@color/business_black_color"
+            android:textSize="@dimen/footer_tv_size_14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/xiuxian"
+            android:gravity="center"
+            android:text="@string/business_category_amusementString"
+            android:textColor="@color/business_black_color"
+            android:textSize="@dimen/footer_tv_size_14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/ktv"
+            android:gravity="center"
+            android:text="@string/business_category_ktvString"
+            android:textColor="@color/business_black_color"
+            android:textSize="@dimen/footer_tv_size_14" />
+
+
+    </LinearLayout>
+
+
+    <!--排序方式-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/sort_by_distance_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/business_sort_selector"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="@string/business_sort_distanceString"
+            android:textColor="@color/business_sort_selector"
+            android:textSize="@dimen/footer_tv_size_14" />
+
+        <TextView
+            android:id="@+id/sort_by_praise_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/business_sort_selector"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="@string/business_sort_praiseString"
+            android:textColor="@color/business_sort_selector"
+            android:textSize="@dimen/footer_tv_size_14" />
+
+        <TextView
+            android:id="@+id/sort_by_bestOffer_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/business_sort_selector"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="@string/business_sort_bestOfferString"
+            android:textColor="@color/business_sort_selector"
+            android:textSize="@dimen/footer_tv_size_14" />
+
+        <TextView
+            android:id="@+id/sort_by_mostPopular_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/business_sort_selector"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="@string/business_sort_mostPopularString"
+            android:textColor="@color/business_sort_selector"
+            android:textSize="@dimen/footer_tv_size_14" />
+
+        <TextView
+            android:id="@+id/sort_by_raffle_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/business_sort_selector"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="@string/business_sort_raffleString"
+            android:textColor="@color/business_sort_selector"
+            android:textSize="@dimen/footer_tv_size_14" />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/business_content_recyleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

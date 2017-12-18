@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="2dp">
+
+        <ImageView
+            android:id="@+id/business_item_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ps_goods" />
+
+        <LinearLayout
+            android:id="@+id/business_item_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/business_item_name_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:singleLine="true"
+                    android:text="梦想人情侣餐厅"
+                    android:textColor="@color/business_black_color"
+                    android:textSize="@dimen/footer_tv_size_16" />
+
+                <TextView
+                    android:id="@+id/business_item_salesNum_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom|left"
+                    android:text="月销量800"
+                    android:textColor="@color/business_grey_color"
+                    android:textSize="@dimen/footer_tv_size_13" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:singleLine="true"
+                    android:text="今日"
+                    android:textColor="@color/business_black_color"
+                    android:textSize="@dimen/footer_tv_size_16" />
+
+                <TextView
+                    android:id="@+id/business_item_discountNum_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:singleLine="true"
+                    android:text="5"
+                    android:textColor="@color/business_red_color"
+                    android:textSize="@dimen/footer_tv_size_23" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:singleLine="true"
+                    android:text="折"
+                    android:textColor="@color/business_black_color"
+                    android:textSize="@dimen/footer_tv_size_16" />
+
+                <TextView
+                    android:id="@+id/business_item_praiseNum_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom|left"
+                    android:text="好评率95%"
+                    android:textColor="@color/business_grey_color"
+                    android:textSize="@dimen/footer_tv_size_13" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/business_item_distanceNum_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:singleLine="true"
+                    android:text="距离1.0km"
+                    android:textColor="@color/business_grey_color"
+                    android:textSize="@dimen/footer_tv_size_13" />
+
+                <TextView
+                    android:id="@+id/business_item_PopularityNum_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom|left"
+                    android:maxLines="1"
+                    android:text="人 气1400"
+                    android:textColor="@color/business_grey_color"
+                    android:textSize="@dimen/footer_tv_size_13" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/business_content_item_line_color"/>
+
+</LinearLayout>
