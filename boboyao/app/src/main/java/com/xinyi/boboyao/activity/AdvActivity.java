@@ -69,7 +69,7 @@ public class AdvActivity extends BaseActivity {
                 nextImage();
 
             }
-//qq
+
             countdown--;
 
         }
