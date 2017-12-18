@@ -8,7 +8,7 @@
 /captures
 .externalNativeBuild
 .DS_Store
-
+/easeui/build
 #built application files
 *.apk
 *.ap_

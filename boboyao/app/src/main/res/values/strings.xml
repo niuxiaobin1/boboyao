@@ -73,6 +73,8 @@
     <string name="activity_checkbox_text"> 本人同意众创网络科技股份有限公司股份协议</string>
     <string name="activity_next"> 下一条</string>
 
+    <string name="share_toString"> 分享至</string>
+
     <string-array name="names">
         <item>action</item>
         <item>adventure</item>

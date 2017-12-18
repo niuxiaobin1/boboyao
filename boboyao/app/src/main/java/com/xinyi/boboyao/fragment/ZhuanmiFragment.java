@@ -1,13 +1,18 @@
 package com.xinyi.boboyao.fragment;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 
 import com.bumptech.glide.Glide;
 import com.stx.xhb.xbanner.XBanner;
@@ -59,7 +64,10 @@ public class ZhuanmiFragment extends BaseFragment {
     @BindView(R.id.readAdv_layout)
     LinearLayout readAdv_layout;
 
+    @BindView(R.id.zhuanmi_invitefirend_ll)
+    LinearLayout invitefirend_layout;
 
+    private PopupWindow popupWindow;
     private List<String> images;
     private List<String> titles;
 
@@ -84,7 +92,7 @@ public class ZhuanmiFragment extends BaseFragment {
     }
 
     @OnClick({R.id.vipPacket_layout, R.id.tempTask_layout,R.id.luckpan_layout,
-            R.id.shougong_layout,R.id.shareholder_layout,R.id.readAdv_layout})
+            R.id.shougong_layout,R.id.shareholder_layout,R.id.readAdv_layout, R.id.zhuanmi_invitefirend_ll})
     @Override
     public void onClick(View v) {
         super.onClick(v);
@@ -109,8 +117,13 @@ public class ZhuanmiFragment extends BaseFragment {
             case R.id.readAdv_layout:
                 it = new Intent(getActivity(), AdvActivity.class);
                 break;
+            case R.id.zhuanmi_invitefirend_ll:
+                showInviteFriendPopup();
+                break;
         }
-        startActivity(it);
+        if (it != null) {
+            startActivity(it);
+        }
     }
 
     @Override
@@ -165,5 +178,39 @@ public class ZhuanmiFragment extends BaseFragment {
         // 设置XBanner页面切换的时间，即动画时长
         banner.setPageChangeDuration(1000);
         banner.setmAutoPalyTime(5000);
+    }
+
+
+
+    /**
+     * 邀请好友弹窗
+     */
+    private void showInviteFriendPopup() {
+
+        if (popupWindow == null) {
+            View view = LayoutInflater.from(context).inflate(R.layout.invite_friend_popup, null);
+            view.findViewById(R.id.close_image).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    WindowManager.LayoutParams params = getActivity().getWindow().getAttributes();
+                    params.alpha = 1f;
+                    getActivity().getWindow().setAttributes(params);
+                    popupWindow.dismiss();
+                }
+            });
+            int w = DensityUtils.getScreenWidth(context) * 4 / 5;
+            int h = (int) (w * 1.423 + DensityUtils.dp2px(getActivity(), 130));
+            popupWindow = new PopupWindow(view, w, h);
+            popupWindow.setTouchable(true);
+            popupWindow.setOutsideTouchable(true);
+            popupWindow.setBackgroundDrawable(new BitmapDrawable(getResources(), (Bitmap) null));
+        }
+        getActivity().getWindow().addFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
+        WindowManager.LayoutParams params = getActivity().getWindow().getAttributes();
+        params.alpha = 0.3f;
+        getActivity().getWindow().setAttributes(params);
+        popupWindow.showAtLocation(rootView, Gravity.CENTER, 0, 0);
+
+
     }
 }

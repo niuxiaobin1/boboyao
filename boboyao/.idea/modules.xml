@@ -3,8 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\andoridProject\boboyao2\boboyao\app\app.iml" filepath="D:\andoridProject\boboyao2\boboyao\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/boboyao.iml" filepath="$PROJECT_DIR$/boboyao.iml" />
+      <module fileurl="file://D:\andoridProject\boboyao2\boboyao\boboyao.iml" filepath="D:\andoridProject\boboyao2\boboyao\boboyao.iml" />
       <module fileurl="file://$PROJECT_DIR$/easeui/easeui.iml" filepath="$PROJECT_DIR$/easeui/easeui.iml" />
+      <module fileurl="file://D:\andoridProject\boboyao2\boboyao\easeui\easeui.iml" filepath="D:\andoridProject\boboyao2\boboyao\easeui\easeui.iml" />
     </modules>
   </component>
 </project>

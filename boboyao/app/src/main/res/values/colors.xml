@@ -19,4 +19,6 @@
     <color name="temp_task_itme_gray">#595959</color>
     <color name="circle_bg">#636363</color>
     <color name="next_bg">#E24F57</color>
+
+    <color name="share_popup_text_black">#131313</color>
 </resources>

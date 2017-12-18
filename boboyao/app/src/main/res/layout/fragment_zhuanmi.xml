@@ -61,13 +61,13 @@
                     android:paddingTop="10dp">
 
                     <TextView
-                        android:gravity="center_vertical"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@color/colorWhite"
                         android:drawableLeft="@mipmap/turnpan_icon"
                         android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
                         android:text="@string/zhuanmi_luckpan"
                         android:textColor="@color/meaasge_text_color_black"
                         android:textSize="@dimen/footer_tv_size_15" />
@@ -93,13 +93,13 @@
                     android:paddingTop="10dp">
 
                     <TextView
-                        android:gravity="center_vertical"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@color/colorWhite"
                         android:drawableLeft="@mipmap/earn_vip_icon"
                         android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
                         android:text="@string/zhuanmi_vip"
                         android:textColor="@color/meaasge_text_color_black"
                         android:textSize="@dimen/footer_tv_size_15" />
@@ -125,13 +125,13 @@
                     android:paddingTop="10dp">
 
                     <TextView
-                        android:gravity="center_vertical"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@color/colorWhite"
                         android:drawableLeft="@mipmap/earn_tribute_icon"
                         android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
                         android:text="@string/zhuanmi_shougong"
                         android:textColor="@color/meaasge_text_color_black"
                         android:textSize="@dimen/footer_tv_size_15" />
@@ -157,13 +157,13 @@
                     android:paddingTop="10dp">
 
                     <TextView
-                        android:gravity="center_vertical"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@color/colorWhite"
                         android:drawableLeft="@mipmap/earn_read_icon"
                         android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
                         android:text="@string/zhuanmi_readAdv"
                         android:textColor="@color/meaasge_text_color_black"
                         android:textSize="@dimen/footer_tv_size_15" />
@@ -176,6 +176,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/zhuanmi_invitefirend_ll"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="1dp"
@@ -188,13 +189,13 @@
                     android:paddingTop="10dp">
 
                     <TextView
-                        android:gravity="center_vertical"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@color/colorWhite"
                         android:drawableLeft="@mipmap/earn_add_icon"
                         android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
                         android:text="@string/zhuanmi_inviteFriend"
                         android:textColor="@color/meaasge_text_color_black"
                         android:textSize="@dimen/footer_tv_size_15" />
@@ -219,13 +220,13 @@
                     android:paddingTop="10dp">
 
                     <TextView
-                        android:gravity="center_vertical"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@color/colorWhite"
                         android:drawableLeft="@mipmap/earn_circle_icon"
                         android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
                         android:text="@string/zhuanmi_shareToFriendCircle"
                         android:textColor="@color/meaasge_text_color_black"
                         android:textSize="@dimen/footer_tv_size_15" />
@@ -251,13 +252,13 @@
                     android:paddingTop="10dp">
 
                     <TextView
-                        android:gravity="center_vertical"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@color/colorWhite"
                         android:drawableLeft="@mipmap/earn_one_icon"
                         android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
                         android:text="@string/zhuanmi_1Shareholder"
                         android:textColor="@color/meaasge_text_color_black"
                         android:textSize="@dimen/footer_tv_size_15" />
@@ -283,13 +284,13 @@
                     android:paddingTop="10dp">
 
                     <TextView
-                        android:gravity="center_vertical"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@color/colorWhite"
                         android:drawableLeft="@mipmap/earn_temporary_icon"
                         android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
                         android:text="@string/zhuanmi_tempTask"
                         android:textColor="@color/meaasge_text_color_black"
                         android:textSize="@dimen/footer_tv_size_15" />
