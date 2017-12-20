@@ -40,7 +40,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:replace="android:theme">
         <activity
             android:name=".activity.MainActivity"
             android:screenOrientation="portrait">
@@ -181,7 +182,32 @@
         <activity android:name=".activity.ShouGongActivity" />
         <activity android:name=".activity.MoneyTreeActivity" />
         <activity android:name=".activity.ShareholderActivity" />
-        <activity android:name=".activity.AdvActivity"></activity>
+        <activity android:name=".activity.AdvActivity" />
+        <activity android:name=".circleFriend.FriendCircleActivity"></activity>
+
+
+        <activity
+            android:name=".circleFriend.PhotoBrowseActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"/>
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.xinyi.boboyao"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths"/>
+        </provider>
+
+        <!--glide-->
+        <meta-data
+            android:name="razerdp.github.com.ui.imageloader.glide.GlobalGlideConfiguration"
+            android:value="GlideModule"/>
     </application>
 
 </manifest>

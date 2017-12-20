@@ -17,6 +17,7 @@ import com.xinyi.boboyao.R;
 import com.xinyi.boboyao.activity.MoneyTreeActivity;
 import com.xinyi.boboyao.activity.RedPacketRainActivity;
 import com.xinyi.boboyao.activity.TreasureMapActivity;
+import com.xinyi.boboyao.circleFriend.FriendCircleActivity;
 import com.xinyi.boboyao.tools.DensityUtils;
 
 import java.util.ArrayList;
@@ -44,6 +45,9 @@ public class AmusementFragment extends BaseFragment {
     @BindView(R.id.moneyTree_layout)
     LinearLayout moneyTree_layout;
 
+    @BindView(R.id.friendCircle_layout)
+    LinearLayout friendCircle_layout;
+
 
     private List<String> images;
     private List<String> titles;
@@ -67,7 +71,8 @@ public class AmusementFragment extends BaseFragment {
 
     }
 
-    @OnClick({R.id.treasureMap_layout, R.id.redPacketRain_layout, R.id.moneyTree_layout})
+    @OnClick({R.id.treasureMap_layout, R.id.redPacketRain_layout, R.id.moneyTree_layout,
+            R.id.friendCircle_layout})
     @Override
     public void onClick(View v) {
         super.onClick(v);
@@ -83,6 +88,9 @@ public class AmusementFragment extends BaseFragment {
                 break;
             case R.id.moneyTree_layout:
                 it = new Intent(getActivity(), MoneyTreeActivity.class);
+                break;
+            case R.id.friendCircle_layout:
+                it = new Intent(getActivity(), FriendCircleActivity.class);
                 break;
 
         }

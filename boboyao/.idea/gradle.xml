@@ -9,6 +9,12 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/circle_base_library" />
+            <option value="$PROJECT_DIR$/circle_base_ui" />
+            <option value="$PROJECT_DIR$/circle_common" />
+            <option value="$PROJECT_DIR$/circle_photoselect" />
+            <option value="$PROJECT_DIR$/circle_photoview" />
+            <option value="$PROJECT_DIR$/circle_publish" />
             <option value="$PROJECT_DIR$/easeui" />
           </set>
         </option>
