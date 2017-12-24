@@ -183,16 +183,13 @@
         <activity android:name=".activity.MoneyTreeActivity" />
         <activity android:name=".activity.ShareholderActivity" />
         <activity android:name=".activity.AdvActivity" />
-        <activity android:name=".circleFriend.FriendCircleActivity"></activity>
-
-
+        <activity android:name=".circleFriend.FriendCircleActivity" />
         <activity
             android:name=".circleFriend.PhotoBrowseActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
-            android:theme="@style/Transparent"/>
-
+            android:theme="@style/Transparent" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
@@ -201,13 +198,14 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/filepaths"/>
+                android:resource="@xml/filepaths" />
         </provider>
 
-        <!--glide-->
+        <!-- glide -->
         <meta-data
             android:name="razerdp.github.com.ui.imageloader.glide.GlobalGlideConfiguration"
-            android:value="GlideModule"/>
+            android:value="GlideModule" />
+
     </application>
 
 </manifest>

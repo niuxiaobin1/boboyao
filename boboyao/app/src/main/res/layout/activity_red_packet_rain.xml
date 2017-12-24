@@ -9,4 +9,9 @@
 
 
     <include layout="@layout/activity_back_title_bar"/>
+
+    <com.xinyi.boboyao.views.meteor.MeteorView
+        android:id="@+id/meteorView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
 </LinearLayout>

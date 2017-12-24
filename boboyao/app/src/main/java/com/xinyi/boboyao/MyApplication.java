@@ -19,6 +19,10 @@ import razerdp.github.com.lib.manager.localphoto.LocalPhotoManager;
 
 public class MyApplication extends Application {
 
+
+    public static int SCREEN_WIDTH = 0;
+    public static int SCREEN_HEIGHT = 0;
+
     public static Context applicationContext;
     private static MyApplication instance;
     // login user name
